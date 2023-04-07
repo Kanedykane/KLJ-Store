@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="search.css">
+</head>
+<body>
+    <div class="head1">
+        <img id="logo" src= "Icons/KJLLOGO.png" alt="KJLLOGO"/>
+        <div class="navigation">
+            <input id="searchbar" type="text" name="search" placeholder="  Search...">
+            <button class="btn">
+                <a href="search.html"><img class="inside_btn" src="Icons/search_icon.png" alt="search_icon"></a>
+                <span>Search</span>
+            </button>
+            <button class="btn">
+                <a href="cart.html"><img class="inside_btn" src="Icons/shopping_cart.png" alt="cart_icon"></a>
+                <span>Cart</span>
+            </button>
+            <button class="btn">
+                <a href="account.html"><img class="inside_btn" src="Icons/account_icon.png" alt="login_icon"></a>
+                <span>Account</span>
+            </button>
+            <button class="btn">
+                <a href="faqs_1.html"><img class="inside_btn" src="Icons/faq_icon.png" alt="faq_icon"></a>
+                <span>FAQ</span>
+            </button>
+
+        </div>
+    </div>
+
+    <div id="sort">
+        <form>
+            <label for="sortby">Sort by:</label>
+            <select name="sortby" id="sortby">
+                <option value="relevance">Relevance</option>
+                <option value="latest">Latest</option>
+                <option value="top sales">Top Sales</option>
+                <option value="rating">Rating</option>
+            </select>
+        </form>
+    </div>
+
+    <div id="sort_cat">
+        <form>
+            <label for="bycategory">By Category:</label><br>
+            <label>
+                <input type="checkbox" name="accessories" value="value1">
+                Accessories
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="dvd" value="value2">
+                DVD
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="OST" value="value3">
+                OST
+            </label>
+          </form>
+    </div>
+    
+    <div id="sort_rat">
+        <form>
+            <label for="rating">Rating:</label><br>
+            <label>
+                <input type="checkbox" name="5star" value="value1">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="4star" value="value2">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="3star" value="value3">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="2star" value="value4">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="1star" value="value5">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </label>
+          </form>
+        </form>
+    </div>
+
+    <div id="sort_ship_opt">
+        <form>
+            <label for="shippingoption">Shipping Option:</label><br>
+            <label>
+                <input type="checkbox" name="j&texpress" value="value1">
+                J & T Express
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="LBC" value="value2">
+                LBC
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="OST" value="value3">
+                Ninja Van
+            </label>
+          </form>
+    </div>
+
+    <div id="sort_ship_from">
+        <form>
+            <label for="shippedfrom">Shipped From:</label><br>
+            <label>
+                <input type="checkbox" name="luzon" value="value1">
+                Luzon
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="visayas" value="value2">
+                Visayas
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="mindanao" value="value3">
+                Mindanao
+            </label>
+          </form>
+    </div>
+</body>
+</html>
+
