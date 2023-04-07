@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>KLJ Store - Register</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Register</title>
+		<link rel="stylesheet" type="text/css" href="Register.css">
+	</head>
+	<body>
+		<div class="Header">
+			<img src="Images/storeLogo.png" id="logo">
+			<div class="TopRightNavigation">
+				<input type="text" name="searchValue" id="SearchBox" placeholder="Search for items">
+				<button id="Search">
+					<img class="TopRightNavigationIcons" src="Icons/search_icon.png">
+					<h2 class="ButtonText">Search</h2>
+					<a href="Search.html"></a>
+				</button>
+				<button id="Cart">
+					<img class="TopRightNavigationIcons" src="Icons/shopping_cart.png">
+					<h2 class="ButtonText">Cart</h2>
+					<a href="Cart.html"></a>
+				</button>
+				<button id="Account">
+					<img class="TopRightNavigationIcons" src="Icons/account_icon.png">
+					<h2 class="ButtonText">Account</h2>
+					<a href="Account.html"></a>
+				</button>
+				<button id="FAQs">
+					<img class="TopRightNavigationIcons" src="Icons/faq_icon.png">
+					<h2 class="ButtonText">FAQs</h2>
+					<a href="FAQs.html"></a>
+				</button>
+			</div>
+		</div>
+		<main>
+			<form>
+				<h1>REGISTER</h1>
+
+				<input type="text" id="username" name="username" placeholder="Username" required><br>
+
+				<input type="password" id="password" name="password" placeholder="Password" required><br>
+
+				<input type="password" id="repeat-password" name="repeat-password" placeholder="Repeat Password" required><br>
+
+				<input type="submit" value="Create">
+
+				<p>Already have an account? <a href="Account.html">Log In</a></p>
+			</form>
+		</main>
+	</body>
+</html>
