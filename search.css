@@ -48,8 +48,46 @@
     margin-right: 5px;
 }
 
+
+/*sorted by:*/
+#sort {
+    float: right;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+select {
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+}
+
+/*by category*/
+#sort_cat {
+    margin-top: 20px;
+}
+
 /*rating*/
+
+#sort_rat {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 .checked{
     color: orange;
+}
+
+/*Shipping Option*/
+
+#sort_ship {
+    margin-top: 10px;
+}
+
+/*Shipped From*/
+
+#sort_ship_from {
+    margin-top: 10px;
 }
