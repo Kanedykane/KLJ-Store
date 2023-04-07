@@ -54,26 +54,32 @@
     float: right;
     padding-right: 20px;
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
 }
 
 select {
-    width: 200px;
+    width: 250px;
     height: 30px;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 /*by category*/
 #sort_cat {
-    margin-top: 20px;
+    margin-left: 30px;
+    padding-top: 175px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 /*rating*/
 
 #sort_rat {
+    margin-left: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .checked{
@@ -82,12 +88,18 @@ select {
 
 /*Shipping Option*/
 
-#sort_ship {
+#sort_ship_opt {
+    margin-left: 30px;
     margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 /*Shipped From*/
 
 #sort_ship_from {
+    margin-left: 30px;
     margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
 }
