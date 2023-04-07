@@ -1,3 +1,4 @@
+/*For the headers, navigation buttons*/
 
 .head1 {
     background-color: #512DA8;
@@ -49,6 +50,7 @@
     margin-right: 5px;
 }
 
+/*Faqs_content*/
 .faqs_cont {
     margin: 50px;
     background-color: #512DA8;
