@@ -107,27 +107,35 @@ select {
 /*for the price range*/
 .container {
     margin-top: 20px;
-    display: flex;
-    align-items: center;
     
-  }
+}
 
-  .price-input {
-    margin-right: 10px;
+.price-input {
+    width: 200px;
+    margin-left: 30px;
+    margin-bottom: 5px;
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 2px solid #000000;
     border-radius: 3px;
-  }
+}
 
-  .apply-btn {
+.apply-btn {
+    margin-left: 100px;
     background-color: #4CAF50;
     color: white;
     padding: 5px 10px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-  }
+}
 
-  .apply-btn:hover {
+.apply-btn:hover {
     background-color: #3e8e41;
-  }
+}
+
+#price_range {
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
