@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="search.css">
+    <script src="search.js" defer></script>
 </head>
 <body>
     <div class="head1">
@@ -31,7 +32,7 @@
 
         </div>
     </div>
-
+    
     <div id="sort">
         <form>
             <label for="sortby">Sort by:</label>
@@ -43,116 +44,368 @@
             </select>
         </form>
     </div>
+    <div class="leftpart">
+        <div class="searchresult">
+            <h2>Result</h2>
+            <p>Showing ### results for result</p>
+        </div>
+        <div id="sort_cat">
+            <form>
+                <label for="bycategory">By Category:</label><br>
+                <label>
+                    <input type="checkbox" name="accessories" value="value1">
+                    Accessories
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="dvd" value="value2">
+                    DVD
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="OST" value="value3">
+                    OST
+                </label>
+            </form>
+        </div>
+        
+        <div id="sort_rat">
+            <form>
+                <label for="rating">Rating:</label><br>
+                <label>
+                    <input type="checkbox" name="5star" value="value1">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="4star" value="value2">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="3star" value="value3">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="2star" value="value4">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="1star" value="value5">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </label>
+            </form>
+            </form>
+        </div>
 
-    <div id="sort_cat">
-        <form>
-            <label for="bycategory">By Category:</label><br>
-            <label>
-                <input type="checkbox" name="accessories" value="value1">
-                Accessories
-            </label>
+        <div id="sort_ship_opt">
+            <form>
+                <label for="shippingoption">Shipping Option:</label><br>
+                <label>
+                    <input type="checkbox" name="j&texpress" value="value1">
+                    J & T Express
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="LBC" value="value2">
+                    LBC
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="OST" value="value3">
+                    Ninja Van
+                </label>
+            </form>
+        </div>
+
+        <div id="sort_ship_from">
+            <form>
+                <label for="shippedfrom">Shipped From:</label><br>
+                <label>
+                    <input type="checkbox" name="luzon" value="value1">
+                    Luzon
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="visayas" value="value2">
+                    Visayas
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="mindanao" value="value3">
+                    Mindanao
+                </label>
+            </form>
+        </div>
+        
+        <div class="container">
+            <label for="price-range" id="price_range">Price Range:</label>
             <br>
-            <label>
-                <input type="checkbox" name="dvd" value="value2">
-                DVD
-            </label>
+            <input type="number" placeholder="Minimum Price" class="price-input">
             <br>
-            <label>
-                <input type="checkbox" name="OST" value="value3">
-                OST
-            </label>
-          </form>
+            <input type="number" placeholder="Maximum Price" class="price-input">
+            <br>
+            <button class="apply-btn">Apply</button>
+        </div>
     </div>
     
-    <div id="sort_rat">
-        <form>
-            <label for="rating">Rating:</label><br>
-            <label>
-                <input type="checkbox" name="5star" value="value1">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-            </label>
-            <br>
-            <label>
-                <input type="checkbox" name="4star" value="value2">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-            </label>
-            <br>
-            <label>
-                <input type="checkbox" name="3star" value="value3">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </label>
-            <br>
-            <label>
-                <input type="checkbox" name="2star" value="value4">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </label>
-            <br>
-            <label>
-                <input type="checkbox" name="1star" value="value5">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </label>
-          </form>
-        </form>
+    <div class="prodcontainer">
+        <div class="prod_cont">
+            <div class="product" data-name="p-patatas">
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="price">$2.00</div>
+            </div>
+
+            <div class="product" data-name="p-patatas">
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="price">$2.00</div>
+            </div>
+            <div class="product" data-name="p-patatas">
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="price">$2.00</div>
+             </div>
+       
+             <div class="product" data-name="p-patatas">
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="price">$2.00</div>
+             </div>
+       
+             <div class="product" data-name="p-patatas">
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="price">$2.00</div>
+             </div>
+       
+             <div class="product" data-name="p-patatas">
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="price">$2.00</div>
+             </div>
+
+             <div class="product" data-name="p-patatas">
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="price">$2.00</div>
+             </div>
+
+             <div class="product" data-name="p-patatas">
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="price">$2.00</div>
+             </div>
+
+             <div class="product" data-name="p-patatas">
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="price">$2.00</div>
+             </div>
+
+             <div class="product" data-name="p-patatas">
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="price">$2.00</div>
+             </div>
+
+             <div class="product" data-name="p-patatas">
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="price">$2.00</div>
+             </div>
+
+             <div class="product" data-name="p-patatas">
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="price">$2.00</div>
+             </div>
+
+             <div class="product" data-name="p-patatas">
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="price">$2.00</div>
+             </div>
+
+             <div class="product" data-name="p-patatas">
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="price">$2.00</div>
+             </div>
+
+             <div class="product" data-name="p-patatas">
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="price">$2.00</div>
+             </div>
+
+             <div class="product" data-name="p-patatas">
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="price">$2.00</div>
+             </div>
+        </div>
     </div>
 
-    <div id="sort_ship_opt">
-        <form>
-            <label for="shippingoption">Shipping Option:</label><br>
-            <label>
-                <input type="checkbox" name="j&texpress" value="value1">
-                J & T Express
-            </label>
-            <br>
-            <label>
-                <input type="checkbox" name="LBC" value="value2">
-                LBC
-            </label>
-            <br>
-            <label>
-                <input type="checkbox" name="OST" value="value3">
-                Ninja Van
-            </label>
-          </form>
+    <div class="pagination">
+        <ul>
+            <li class="page-item"><a href="#">Previous</a></li>
+            <li class="page-item"><a href="#">1</a></li>
+            <li class="page-item"><a href="#">2</a></li>
+            <li class="page-item"><a href="#">3</a></li>
+            <li class="page-item"><a href="#">4</a></li>
+            <li class="page-item"><a href="#">5</a></li>
+            <li class="page-item"><a href="#">Next</a></li>
+            <!-- add more list items as needed -->
+        </ul>
     </div>
 
-    <div id="sort_ship_from">
-        <form>
-            <label for="shippedfrom">Shipped From:</label><br>
-            <label>
-                <input type="checkbox" name="luzon" value="value1">
-                Luzon
-            </label>
-            <br>
-            <label>
-                <input type="checkbox" name="visayas" value="value2">
-                Visayas
-            </label>
-            <br>
-            <label>
-                <input type="checkbox" name="mindanao" value="value3">
-                Mindanao
-            </label>
-          </form>
+    <div class="overlay">
+        <div class="products-preview">
+
+            <div class="preview" data-target="p-patatas">
+                <span class="fa fa-times"></span>
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span>( 250 )</span>
+                </div>
+                <p>High quality na patatas na galing sa pinas.</p>
+                <div class="price">$2.00</div>
+                <div class="buttons">
+                    <a href="#" class="buy">buy now</a>
+                    <a href="#" class="cart">add to cart</a>
+                </div>
+            </div>
+        
+            <div class="preview" data-target="p-patatas">
+                <span class="fa fa-times"></span>
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span>( 250 )</span>
+                </div>
+                <p>High quality na patatas na galing sa pinas.</p>
+                <div class="price">$2.00</div>
+                <div class="buttons">
+                    <a href="#" class="buy">buy now</a>
+                    <a href="#" class="cart">add to cart</a>
+                </div>
+            </div>
+        
+            <div class="preview" data-target="p-patatas">
+                <span class="fa fa-times"></span>
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span>( 250 )</span>
+                </div>
+                <p>High quality na patatas na galing sa pinas.</p>
+                <div class="price">$2.00</div>
+                <div class="buttons">
+                    <a href="#" class="buy">buy now</a>
+                    <a href="#" class="cart">add to cart</a>
+                </div>
+            </div>
+        
+            <div class="preview" data-target="p-patatas">
+                <span class="fa fa-times"></span>
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span>( 250 )</span>
+                </div>
+                <<p>High quality na patatas na galing sa pinas.</p>
+                <div class="price">$2.00</div>
+                <div class="buttons">
+                    <a href="#" class="buy">buy now</a>
+                    <a href="#" class="cart">add to cart</a>
+                </div>
+            </div>
+        
+            <div class="preview" data-target="p-patatas">
+                <span class="fa fa-times"></span>
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span>( 250 )</span>
+                </div>
+                <p>High quality na patatas na galing sa pinas.</p>
+                <div class="price">$2.00</div>
+                <div class="buttons">
+                    <a href="#" class="buy">buy now</a>
+                    <a href="#" class="cart">add to cart</a>
+                </div>
+            </div>
+        
+            <div class="preview" data-target="p-patatas">
+                <span class="fa fa-times"></span>
+                <img src="images/patatas.png" alt="">
+                <h3>potatoes</h3>
+                <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span>( 250 )</span>
+                </div>
+                <p>High quality na patatas na galing sa pinas.</p>
+                <div class="price">$2.00</div>
+                <div class="buttons">
+                    <a href="#" class="buy">buy now</a>
+                    <a href="#" class="cart">add to cart</a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
