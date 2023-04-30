@@ -49,10 +49,6 @@ a {
 	cursor: pointer;
 }
 
-button:hover {
-  border-radius: 50%;
-}
-
 .TopRightNavigationIcons {
 	width: 70%;
 }
