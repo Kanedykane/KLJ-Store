@@ -5,36 +5,36 @@ function CreateUserAccount(username, password){
 	this.password = password;
 };
 //check if username is already taken
-function userNameExits(arr , username){
+function userNameExists(arr , username) {
     for(let i = 0; i < arr.length; i++){
         if((username) == arr[i].username){
-            alert("She's already taken");
             return true;
         }
-        return false;
     }
+    return false;
+}
 
 $(document).ready(function(){
     let testArray = [];
-    let createAccount = false;
 
     $("#newAccount").submit(function(e){
         e.preventDefault();
+        let passwordNotMatch = $("#password").val() != $("#repeat-password").val();
+        let usernameTaken = (testArray.length > 0) && userNameExists(testArray, $("#username").val());
+
         //check if password and confirm password match
-        if($("#password").val() != $("#repeat-password").val()){
+        if(passwordNotMatch){
             alert("Passwords do not match");
             //clear the second password field
             $("#repeat-password").val("");
-            createAccount = false;
         }
         //check if username is already taken
-        else if(testArray.length > 0 && userNameExits(testArray, $("#username").val())){
+        else if(usernameTaken){
             alert("Username already taken");
             //clear the username and password fields
             $("#username").val("");
             $("#password").val("");
             $("#repeat-password").val("");
-            createAccount = false;
         }
         else{
             //create a new user account object
@@ -66,4 +66,4 @@ $(document).ready(function(){
             alert("Login failed");
         }
     });
-});	
+});
