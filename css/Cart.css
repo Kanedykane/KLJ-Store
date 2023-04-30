@@ -4,6 +4,10 @@ body{
   margin-top: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 .Header {
 	object-fit: cover;
 	height: 120px;
