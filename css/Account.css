@@ -80,8 +80,8 @@ h1 {
   margin-left: 30px;
 }
 
-#username,
-#password {
+#loginUsername,
+#loginPassword {
   width: 80%;
   padding: 10px;
   border: none;
