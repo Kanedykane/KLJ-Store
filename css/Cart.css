@@ -106,6 +106,10 @@ a {
 	margin-left: 60px;
 }
 
+table{
+	border-collapse: collapse;
+}
+
 #itemList{
 	width: 100%;
 }
@@ -116,9 +120,34 @@ a {
 	font-size: 1.5em;
 	font-family: 'Times New Roman', Times, serif;
 }
-#itemList th{
+#itemList th, #itemList td{
 	padding: 15px;
+	text-align: center;
+
 }
-#itemList th:nth-child(1){
+#itemList th:nth-child(1), #itemList td:nth-child(1){
+	text-align: left;
+	text-indent: 80px;
 	width: 60%;
 }
+#itemList img{
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+	margin-left: 40px;
+	border: black 1px solid;
+}
+.itemInfo{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+.itemInfo button{
+	margin-left: 10%;
+}
+
+#quantity button{
+	width: 50%;
+}
+
