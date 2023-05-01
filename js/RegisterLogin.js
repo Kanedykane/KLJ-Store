@@ -46,10 +46,20 @@ $(document).ready(function(){
         }
     });
 
-    $("#login").submit(function(){
+    $("#login").submit(function(e){
+        //insert test values to the array
+        e.preventDefault();
+        let testUser1 = new CreateUserAccount("test1", "test1");
+        let testUser2 = new CreateUserAccount("test2", "test2");
+        let testUser3 = new CreateUserAccount("test3", "test3");
+        testArray.push(testUser1);
+        testArray.push(testUser2);
+        testArray.push(testUser3);
+        console.log(testArray);
+
         //check if username and password match
-        let username = $("#username").val();
-        let password = $("#password").val();
+        let username = $("#loginUsername").val();
+        let password = $("#loginPassword").val();
         let userFound = false;
 
         for(let i = 0; i < testArray.length; i++){
