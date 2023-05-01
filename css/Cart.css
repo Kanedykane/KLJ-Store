@@ -106,10 +106,19 @@ a {
 	margin-left: 60px;
 }
 
-/*  */
-#cartItemsList {
-	display: block;
-	margin-top: 10px;
-	margin-left: 25px;
-	margin-right: 25px;
+#itemList{
+	width: 100%;
+}
+#itemList #Header{
+	background-color: rgb(173, 173, 173);
+	border-top: black 1px solid;
+	border-bottom: black 1px solid;
+	font-size: 1.5em;
+	font-family: 'Times New Roman', Times, serif;
+}
+#itemList th{
+	padding: 15px;
+}
+#itemList th:nth-child(1){
+	width: 60%;
 }
