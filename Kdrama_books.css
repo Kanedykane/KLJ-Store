@@ -1,5 +1,5 @@
 .head1 {
-    background-color: #512DA8;
+    background-color: #FFE77A;
     height: 200px;
     width: 100%;
     border-radius: 20px;
@@ -50,6 +50,12 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+
+span {
+    font-weight: bold;
+    color: #ffffff;
+}
+
 
 .btn {
     width: 80px;

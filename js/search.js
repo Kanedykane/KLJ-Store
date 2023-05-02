@@ -17,3 +17,13 @@ window.onload = function() {
       overlay.style.display = 'none'; /* Hide the overlay when the popup is closed */
     });
   }
+
+function updateButtonText() {
+    const searchText = document.getElementById("searchbar").value;
+    const button = document.getElementById("buttonText");
+    const searchResult = document.getElementById("searchResultText");
+    const heading = document.getElementById("searchHeading");
+
+    searchResult.innerHTML = `Showing 69 results for "${searchText}"`;
+    heading.textContent = `"${searchText}"`;
+}

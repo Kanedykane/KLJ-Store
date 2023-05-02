@@ -1,5 +1,5 @@
 .head1 {
-    background-color: #512DA8;
+    background-color: #FFE77A;
     height: 200px;
     width: 100%;
     border-radius: 20px;
@@ -40,12 +40,18 @@
     justify-content: center;
 }
 
+span {
+    font-weight: bold;
+    color: #ffffff;
+}
+
 .btn {
     width: 80px;
     height: 80px;
     background-color: #17495d;
     border-radius: 8px;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .leftpart {
@@ -239,36 +245,36 @@ select {
     width: 450px;
     }
 
-    .preview.active {
+.preview.active {
     display: block;
     }
     
-    .preview img {
+.preview img {
     width: 80%;
     margin: 10px auto;
     }
     
-    .preview h3 {
+.preview h3 {
     font-size: 40px;
     margin: 10px 0;
-    }
+}
     
-    .preview p {
+.preview p {
     font-size: 20px;
     margin: 10px 0;
-    }
+}
     
-    .preview .price {
+.preview .price {
     font-size: 25px;
     font-weight: bold;
     margin: 10px 0;
-    }
+}
     
-    .preview .buttons {
+.preview .buttons {
     margin-top: 20px;
-    }
+}
     
-    .preview .buy, .preview .cart {
+.preview .buy, .preview .cart {
     display: inline-block;
     background-color: #4caf50;
     color: #fff;
@@ -276,7 +282,7 @@ select {
     padding: 10px;
     margin-right: 10px;
     text-decoration: none;
-    }
+}
     
 .preview .buy:hover, .preview .cart:hover {
     background-color: #3e8e41;
