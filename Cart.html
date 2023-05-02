@@ -1,0 +1,103 @@
+<!-- Cart page for an online store -->
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/Cart.css">
+</head>
+<body>
+    <div class="Header">
+        <a href="Home.html">
+            <img src="Images/storeLogo.png" id="logo">
+        </a>
+        <div class="TopRightNavigation">
+            <input type="text" name="searchValue" id="SearchBox" placeholder="Search for items">
+            <button id="Search">
+                <a href="Search.html">
+                <img class="TopRightNavigationIcons" src="Icons/search_icon.png">
+                <h2 class="ButtonText">Search</h2>
+                </a>
+            </button>
+            <button id="Cart">
+                <a href="Cart.html">
+                <img class="TopRightNavigationIcons" src="Icons/shopping_cart.png">
+                <h2 class="ButtonText">Cart</h2>
+                </a>
+            </button>
+            <button id="Account">
+                <a href="Account.html">
+                <img class="TopRightNavigationIcons" src="Icons/account_icon.png">
+                <h2 class="ButtonText">Account</h2>
+                </a>
+            </button>
+            <button id="FAQs">
+                <a href="FAQs.html">
+                <img class="TopRightNavigationIcons" src="Icons/faq_icon.png">
+                <h2 class="ButtonText">FAQs</h2>
+                </a>
+            </button>
+        </div>
+        <div id="cartHeader">
+            <h1>Your Cart</h1>
+            <h1>Continue Shopping ></h1>
+        </div>
+        <!-- table for item info, price, etc -->
+        <table id="itemList">
+            <tr id="Header">
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="Images/patatas.png" alt="">
+                    <div class="itemInfo">
+                        <p>Item Name</p>
+                        <p>Item Price</p>
+                        <button class="removeButton">Remove</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="quantity">
+                        <button class="quantityButton">-</button>
+                        <input type="number" name="quantity" id="quantity" value="1">
+                        <button class="quantityButton">+</button>
+                    </div>
+                </td>
+                <td>
+                    <h2>Price</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="Images/patatas.png" alt="">
+                    <div class="itemInfo">
+                        <p>Item Name</p>
+                        <p>Item Price</p>
+                        <button class="removeButton">Remove</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="quantity">
+                        <button class="quantityButton">-</button>
+                        <input type="number" name="quantity" id="quantity" value="1">
+                        <button class="quantityButton">+</button>
+                    </div>
+                </td>
+                <td>
+                    <h2>Price</h2>
+                </td>
+
+        </table>
+
+        <div class="cartSubTotal">
+            <h2>SubTotal:</h2>
+            <h2>SubTotal Value</h2>
+        </div>
+        <div class="cartCheckout">
+            <p>Shipping calculated at Checkout</p>
+            <button class="checkoutButton">Checkout</button>
+        </div>
+    </div>
+</body>

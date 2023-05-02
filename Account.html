@@ -5,7 +5,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Account</title>
-		<link rel="stylesheet" type="text/css" href="Account.css">
+		<link rel="stylesheet" type="text/css" href="css/Account.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script src="js/RegisterLogin.js"></script>
 	</head>
 	<body>
 		<div class="Header">
@@ -40,10 +42,10 @@
 				</button>
 			</div>
 		</div>
-		<form>
+		<form id="login"; return false>
 			<h1>LOGIN</h1>
-			<input type="text" id="username" name="username" placeholder="Username" required><br><br>
-			<input type="password" id="password" name="password" placeholder="Password" required><br><br>
+			<input type="text" id="loginUsername" name="username" placeholder="Username" required><br><br>
+			<input type="password" id="loginPassword" name="password" placeholder="Password" required><br><br>
 			<input type="submit" value="Log In">
 			<p>New here? <a href="Register.html">Create Account</a></p>
 		</form>

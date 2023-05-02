@@ -1,0 +1,153 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.Header {
+	object-fit: cover;
+	height: 120px;
+	background: #FFE77A;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 0px 0px 30px 30px;
+}
+
+#logo {
+	width: 150px;
+}
+
+.TopRightNavigation {
+	float: right;
+	margin-right: 10px;
+	margin-top: 5px;
+	display: block;
+}
+
+#SearchBox {
+	box-sizing: border-box;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	height: 55px;
+	border-radius: 50px;
+	border: none;
+	padding: 20px;
+	vertical-align: middle;
+}
+
+.TopRightNavigation button{
+	box-sizing: border-box;
+	width: 55px;
+	height: 55px;
+	background: #2C5F2D;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 10px;
+	border: none;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.TopRightNavigationIcons {
+	width: 70%;
+}
+
+.ButtonText {
+	margin: 0;
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+/* display cart header below the .Header */
+#cartHeader {
+	margin-top: 25px;
+	margin-left: 25px;
+	margin-right: 25px;
+	display: block;
+}
+/* display cartHeader texts inline */
+#cartHeader h1{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-weight: lighter;
+	font-size: 1.5em;
+	display: inline-block;
+}
+/* select and put to the right side 2nd child of cartHeader */
+#cartHeader h1:nth-child(2){
+	float: right;
+}
+
+
+#cartItemListHeader {
+	display: block;
+	background-color: rgb(173, 173, 173);
+	border-top: black 1px solid;
+	border-bottom: black 1px solid;
+}
+#cartItemListHeader h1{
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: lighter;
+	display: inline-block;
+	margin-left: 100px;
+	font-size: 1.5em;
+}
+
+#cartItemListHeader h1:nth-child(2){
+	position: relative;
+	left: 45%;
+}
+
+#cartItemListHeader h1:nth-child(3){
+	float: right;
+	margin-right: 100px;
+	margin-left: 60px;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+#itemList{
+	width: 100%;
+}
+#itemList #Header{
+	background-color: rgb(173, 173, 173);
+	border-top: black 1px solid;
+	border-bottom: black 1px solid;
+	font-size: 1.5em;
+	font-family: 'Times New Roman', Times, serif;
+}
+#itemList th, #itemList td{
+	padding: 15px;
+	text-align: center;
+
+}
+#itemList th:nth-child(1), #itemList td:nth-child(1){
+	text-align: left;
+	text-indent: 80px;
+	width: 60%;
+}
+#itemList img{
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+	margin-left: 40px;
+	border: black 1px solid;
+}
+.itemInfo{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+.itemInfo button{
+	margin-left: 10%;
+}
+
+#quantity button{
+	width: 50%;
+}
+
