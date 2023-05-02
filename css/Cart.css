@@ -147,7 +147,67 @@ table{
 	margin-left: 10%;
 }
 
-#quantity button{
-	width: 50%;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#quantity, button.quantityButton{
+	width: 10%;
+	font-size: 20px;
+	border: gray 1px solid;
+}
+
+button.quantityButton, button.removeButton{
+	background-color: #FFE77A;
+	text-align: center;
+}
+button.removeButton{
+	width: 12.5%;
+	font-size: 18px;
+	border: gray 1px solid;
+}
+
+.cartSubTotal{
+	text-align: right;
+	padding-right: 1%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	display: block;
+	border: gray 1px solid;
+	font-size: 1.2em;
+	font-weight: lighter;
+}
+
+.cartSubTotal h3{
+	display: inline;
+}
+.cartSubTotal h3:nth-child(1){
+	margin-right: 10%;
+}
+
+#checkoutReminder{
+	display: inline-block;
+}
+
+.checkoutButton{
+	text-align: center;
+	float: right;
+	width: 15%;
+	font-size: 1.2em;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+	margin-right: 1%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	border: gray 1px solid;
+
+}
+
+#Checkout{
+	display: block;
+	border-bottom: gray 1px solid;
+	padding-bottom: 0.5%;
 }
 
