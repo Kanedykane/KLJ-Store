@@ -1,5 +1,5 @@
 .head1 {
-    background-color: #512DA8;
+    background-color: #FFE77A;
     height: 200px;
     width: 100%;
     border-radius: 20px;
@@ -40,12 +40,18 @@
     justify-content: center;
 }
 
+span {
+    font-weight: bold;
+    color: #ffffff;
+}
+
 .btn {
     width: 80px;
     height: 80px;
     background-color: #17495d;
     border-radius: 8px;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .leftpart {
