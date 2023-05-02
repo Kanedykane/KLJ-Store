@@ -83,7 +83,7 @@ a {
 
 #cartItemListHeader {
 	display: block;
-	background-color: rgb(173, 173, 173);
+	background-color:rgb(173, 173, 173);
 	border-top: black 1px solid;
 	border-bottom: black 1px solid;
 }
@@ -118,7 +118,7 @@ tr {
 	width: 100%;
 }
 #itemList #Header{
-	background-color: rgb(173, 173, 173);
+	background-color: #FFE77A;
 	border-top: black 1px solid;
 	border-bottom: black 1px solid;
 	font-size: 1.5em;
