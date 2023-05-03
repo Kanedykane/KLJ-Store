@@ -61,4 +61,39 @@ a {
     font-size: 12px;
     color: #FFFFFF;
 }
+#bottomBody {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+#checkoutLeftPane {
+    flex: 1 0 49%; /* Takes up 50% of the parent container width */
+    border: 0.5px solid black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+#userDetails, #paymentOptions, #cartDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#userDetails h2{
+    text-align: left;
+}
+  
+#checkoutRightPane {
+    flex: 1 0 49%;
+    border: 0.5px solid black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#userDetails input{
+    display: block;
+    width: 50%;
+    margin-bottom: 10px;
+}
