@@ -45,14 +45,37 @@
         <div id="bottomBody">
             <div id="CheckoutPane">
                 <div id="userDetails">
-                    <input type="text" id="userRealName">
-                    <input type="number" id="contactNumber">
-                    <input type="email" id="email">
+                    <input type="text" id="userRealName" required>
+                    <input type="number" id="contactNumber" required>
+                    <input type="email" id="email" required>
                 </div>
                 <div id="addressPane">
-                    
+                    <input type="text" id="baranggay" required>
+                    <input type="text" id="cityOrMunicipality" required>
+                    <input type="text" id="province" required>
+                    <input type="text" id="zipCode" required>
+                    <input type="submit" id="submitInfo">
                 </div>
             </div>
+            <div id="paymentOptions">
+                <radio id="cashOnDelivery">Cash on Delivery</radio>
+                <radio id="creditCard">Credit Card</radio>
+                <radio id="PayPal">PayPal</radio>
+            </div>
+            <div id="cartDetails">
+                <div id="cartHeader">
+                    <h1>Your Cart</h1>
+                </div>
+                <table id="cartItems">
+                    <tr id="cartSubHeader">
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
             
 
 
